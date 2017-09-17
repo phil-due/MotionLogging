@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MotionLogging</string>
+    <string name="fieldActivityLabel">Label for activity</string>
+    <string name="fieldCountdown">Countdown</string>
+    <string name="fieldDuration">Duration</string>
+    <string name="buttonStart">Start</string>
+    <string name="buttonStop">Stop</string>
+    <string name="labelGyro">Gyro:</string>
+    <string name="labelAccel">Accel:</string>
+    <string name="emptyData">--</string>
+</resources>

@@ -1,0 +1,16 @@
+####### GUI ###########
+- Field for label x
+- Field for Countdown x
+- Field for Duration x
+- Button for start x
+- Button for stop x
+>> nice to have
+- Field for email
+- Send via email
+
+####### Backend #######
+- save data as csv x
+>> nice to have
+- send via email
+
+FIXME timer restarts when screen is turned
