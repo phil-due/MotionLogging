@@ -38,8 +38,10 @@ public class SensorReader implements SensorEventListener {
 
         accSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         gyroSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
-        if(gyroSensor==null)
+        if(gyroSensor==null){
             gyroSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+            android.util.Log.d("SensorReader","No gyro found using Magnetometer");
+        }
 
         this.dataLogger = dataLogger;
 

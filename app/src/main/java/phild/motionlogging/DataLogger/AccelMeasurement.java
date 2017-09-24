@@ -1,7 +1,5 @@
 package phild.motionlogging.DataLogger;
 
-import phild.motionlogging.Globals;
-
 /**
  * Created by phil on 12-8-17.
  */
@@ -9,11 +7,8 @@ import phild.motionlogging.Globals;
 public class AccelMeasurement extends SensorMeasurement {
 
     public AccelMeasurement(float[] measurements) {
-        values = new int[measurements.length];
-        for (int i = 0; i < measurements.length; i++){
-            //TODO Find appropriate conversion
-            values[i] = Math.round(measurements[i]);
-        }
+        values = new float[measurements.length];
+        System.arraycopy(measurements, 0, values, 0, measurements.length);
     }
 
 }

@@ -6,7 +6,7 @@ package phild.motionlogging.DataLogger;
 
 public abstract class SensorMeasurement {
 
-    protected int[] values = null;
+    protected float[] values = null;
 
     public String toCsv(){
         StringBuilder sb = new StringBuilder();
